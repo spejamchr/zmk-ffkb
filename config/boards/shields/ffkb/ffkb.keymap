@@ -75,9 +75,9 @@
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN &inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN &inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
 
             bindings = <
-    &kp ESC    &kp Q        &kp W        &kp F       &kp P         &kp B                                       &kp J            &kp L         &lt WINNAV U  &kp Y       &kp SEMI    &kp BSLH
-    &kp TAB    &hm LCTL A   &hm LGUI R   &hm LALT S  &hs LSHIFT T  &kp G                                       &lt MOUSE M      &hs RSHIFT N  &hm RALT E    &hm RGUI I  &hm RCTL O  &kp SQT
-    &kp LSHIFT &kp Z        &kp X        &kp C       &kp D         &kp V                                       &kp K            &kp H         &kp COMMA     &kp DOT     &kp FSLH    &kp RCTRL
+    &kp ESC    &kp Q        &kp W        &kp E       &kp R         &kp T                                       &kp Y            &kp U         &lt WINNAV I  &kp O       &kp P         &kp BSLH
+    &kp TAB    &hm LCTL A   &hm LGUI S   &hm LALT D  &hs LSHIFT F  &kp G                                       &lt MOUSE H      &hs RSHIFT J  &hm RALT K    &hm RGUI L  &hm RCTL SEMI &kp SQT
+    &kp LSHIFT &kp Z        &kp X        &kp C       &kp V         &kp B                                       &kp N            &kp M         &kp COMMA     &kp DOT     &kp FSLH      &kp RCTRL
                                          &kp DEL     &lt NAV RET   &lt FUNC TAB                                &lt MEDIA BSPC   &lt SYM SPACE &kp SQT
             >;
         };
