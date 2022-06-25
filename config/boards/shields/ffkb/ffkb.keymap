@@ -76,9 +76,9 @@
 
             bindings = <
     &kp ESC    &kp Q        &kp W        &kp E       &kp R         &kp T                                       &kp Y            &kp U         &lt WINNAV I  &kp O       &kp P         &kp BSLH
-    &kp TAB    &hm LCTL A   &hm LGUI S   &hm LALT D  &hs LSHIFT F  &kp G                                       &lt MOUSE H      &hs RSHIFT J  &hm RALT K    &hm RGUI L  &hm RCTL SEMI &kp SQT
+    &kp TAB    &hm LCTL A   &hm LGUI S   &hm LALT D  &hs LSHIFT F  &kp G            &kp LA(TAB)                &lt MOUSE H      &hs RSHIFT J  &hm RALT K    &hm RGUI L  &hm RCTL SEMI &kp SQT
     &kp LSHIFT &kp Z        &kp X        &kp C       &kp V         &kp B                                       &kp N            &kp M         &kp COMMA     &kp DOT     &kp FSLH      &kp RCTRL
-                                         &kp DEL     &lt NAV RET   &lt FUNC TAB                                &lt MEDIA BSPC   &lt SYM SPACE &kp SQT
+                                         &kp C_MUTE  &kp DEL       &lt NAV RET  &lt FUNC TAB  &lt MEDIA BSPC   &lt SYM SPACE &kp SQT      &kp LC(BSPC)
             >;
         };
 
@@ -89,9 +89,9 @@
 
             bindings = <
     &trans     &kp ESC      &kp PG_UP    &kp UP      &kp PG_DN     &trans                                      &kp ASTRK     &kp N7       &kp N8        &kp N9      &kp MINUS   &trans
-    &trans     &kp HOME     &kp LEFT     &kp DOWN    &kp RIGHT     &kp END                                     &kp FSLH      &kp N4       &kp N5        &kp N6      &kp PLUS    &trans
+    &trans     &kp HOME     &kp LEFT     &kp DOWN    &kp RIGHT     &kp END              &trans                 &kp FSLH      &kp N4       &kp N5        &kp N6      &kp PLUS    &trans
     &trans     &trans       &trans       &trans      &trans        &trans                                      &kp EQUAL     &kp N1       &kp N2        &kp N3      &kp N0      &trans
-                                         &trans      &trans        &kp TAB                                     &kp BSPC      &kp SPACE    &kp DOT
+                                         &trans      &trans        &trans       &kp TAB       &kp BSPC         &kp SPACE     &kp DOT      &trans
             >;
         };
 
@@ -102,9 +102,9 @@
 
             bindings = <
     &trans     &kp EXCL     &kp AT       &kp HASH        &kp DLLR         &kp PRCNT                                   &kp CARET     &kp AMPS          &kp ASTRK     &kp UNDER   &kp EQUAL   &trans
-    &trans     &kp MINUS    &kp LBKT     &kp LBRC        &kp LPAR         &kp LT                                      &kp GT        &kp RPAR          &kp RBRC      &kp RBKT    &kp PLUS    &trans
+    &trans     &kp MINUS    &kp LBKT     &kp LBRC        &kp LPAR         &kp LT                &trans                &kp GT        &kp RPAR          &kp RBRC      &kp RBKT    &kp PLUS    &trans
     &trans     &kp CAPS     &kp GRAVE    &kp LC(LS(TAB)) &kp LC(LG(LEFT)) &caps_word                                  &trans        &kp LC(LG(RIGHT)) &kp LC(TAB)   &trans      &kp BSLH    &trans
-                                         &trans          &kp RET          &kp DEL                                     &kp BSPC      &trans            &trans
+                                         &trans          &trans           &kp RET       &kp DEL        &kp BSPC       &trans        &trans            &trans
             >;
         };
 
@@ -115,9 +115,9 @@
 
             bindings = <
     &trans     &trans       &kp LS(PG_UP) &kp LS(UP)   &kp LS(PG_DN) &trans                                      &kp C_PLAY_PAUSE &kp F7       &kp F8        &kp F9      &kp F10     &trans
-    &trans     &kp LS(HOME) &kp LS(LEFT)  &kp LS(DOWN) &kp LS(RIGHT) &kp LS(END)                                 &kp K_VOL_UP     &kp F4       &kp F5        &kp F6      &kp F11     &trans
+    &trans     &kp LS(HOME) &kp LS(LEFT)  &kp LS(DOWN) &kp LS(RIGHT) &kp LS(END)           &trans                &kp K_VOL_UP     &kp F4       &kp F5        &kp F6      &kp F11     &trans
     &trans     &trans       &trans        &trans       &trans        &kp C_MUTE                                  &kp K_VOL_DN     &kp F1       &kp F2        &kp F3      &kp F12     &trans
-                                          &trans       &trans        &trans                                      &trans           &trans       &kp SPACE
+                                          &trans       &trans        &trans        &trans         &trans         &trans           &kp SPACE    &trans
             >;
         };
 
@@ -128,9 +128,9 @@
 
             bindings = <
     &rgb_ug RGB_COLOR_HSB(0,0,100)         &rgb_ug RGB_TOG  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF &trans            &trans                            &trans             &bt BT_PRV        &bt BT_NXT         &trans         &trans          &trans
-    &rgb_ug RGB_COLOR_HSB(224,100,100)     &trans           &rgb_ug RGB_HUI  &rgb_ug RGB_SAI &rgb_ug RGB_BRI   &rgb_ug RGB_SPI                   &bt BT_CLR         &bt BT_SEL 0      &bt BT_SEL 1       &bt BT_SEL 2   &bt BT_SEL 3    &trans
+    &rgb_ug RGB_COLOR_HSB(224,100,100)     &trans           &rgb_ug RGB_HUI  &rgb_ug RGB_SAI &rgb_ug RGB_BRI   &rgb_ug RGB_SPI      &trans       &bt BT_CLR         &bt BT_SEL 0      &bt BT_SEL 1       &bt BT_SEL 2   &bt BT_SEL 3    &trans
     &rgb_ug RGB_COLOR_HSB(278,100,100)     &trans           &rgb_ug RGB_HUD  &rgb_ug RGB_SAD &rgb_ug RGB_BRD   &rgb_ug RGB_SPD                   &ext_power EP_TOG  &ext_power EP_ON  &ext_power EP_OFF  &out OUT_USB   &out OUT_BLE    &trans
-                                                            &trans           &trans                            &trans                            &trans             &trans            &trans
+                                                                            &trans          &trans            &trans        &trans         &trans         &trans           &trans     &trans
             >;
         };
 
@@ -141,9 +141,9 @@
 
             bindings = <
     &trans     &bootloader &trans      &trans      &trans      &trans                                           &trans      &trans      &trans      &trans      &trans      &trans
+    &trans     &trans      &trans      &trans      &trans      &trans                   &trans                  &trans      &trans      &trans      &trans      &trans      &trans
     &trans     &trans      &trans      &trans      &trans      &trans                                           &trans      &trans      &trans      &trans      &trans      &trans
-    &trans     &trans      &trans      &trans      &trans      &trans                                           &trans      &trans      &trans      &trans      &trans      &trans
-                                       &trans      &trans      &trans                                           &trans      &trans      &trans
+                                         &trans      &trans        &trans        &trans         &trans          &trans      &trans      &trans
             >;
         };
 
@@ -154,9 +154,9 @@
 
             bindings = <
     &trans     &trans       &trans       &kp LG(UP)   &trans        &trans                                      &trans      &trans      &trans      &trans      &trans      &trans
-    &trans     &trans       &kp LG(LEFT) &kp LG(DOWN) &kp LG(RIGHT) &trans                                      &trans      &trans      &trans      &trans      &trans      &trans
+    &trans     &trans       &kp LG(LEFT) &kp LG(DOWN) &kp LG(RIGHT) &trans                &trans                &trans      &trans      &trans      &trans      &trans      &trans
     &trans     &trans       &trans       &trans       &trans        &trans                                      &trans      &trans      &trans      &trans      &trans      &trans
-                                         &trans       &trans        &trans                                      &trans      &trans      &trans
+                                         &trans       &trans        &trans        &trans         &trans         &trans        &trans       &trans
             >;
         };
     };
