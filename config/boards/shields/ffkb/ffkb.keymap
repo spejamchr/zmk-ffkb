@@ -75,10 +75,10 @@
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN &inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN &inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
 
             bindings = <
-    &kp ESC    &kp Q        &kp W        &kp E       &kp R         &kp T                                       &kp Y            &kp U         &lt WINNAV I  &kp O       &kp P         &kp BSLH
-    &kp TAB    &hm LCTL A   &hm LGUI S   &hm LALT D  &hs LSHIFT F  &kp G            &kp LA(TAB)                &lt MOUSE H      &hs RSHIFT J  &hm RALT K    &hm RGUI L  &hm RCTL SEMI &kp SQT
-    &kp LSHIFT &kp Z        &kp X        &kp C       &kp V         &kp B                                       &kp N            &kp M         &kp COMMA     &kp DOT     &kp FSLH      &kp RCTRL
-                                         &kp C_MUTE  &kp DEL       &lt NAV RET  &lt FUNC TAB  &lt MEDIA BSPC   &lt SYM SPACE &kp SQT      &kp LC(BSPC)
+    &kp TAB       &kp Q       &kp W        &kp E       &kp R         &kp T                                       &kp Y            &kp U         &kp I         &kp O       &kp P         &kp BSPC
+    &hm LCTL ESC  &kp A       &kp S        &kp D       &kp F         &kp G            &kp LA(TAB)                &kp H            &kp J         &kp K         &kp L       &kp SEMI      &kp SQT
+    &kp LSHIFT    &kp Z       &kp X        &kp C       &kp V         &kp B                                       &kp N            &kp M         &kp COMMA     &kp DOT     &kp FSLH      &kp RET
+                                           &kp C_MUTE  &kp LALT      &kp LGUI  &kp LSHIFT       &kp SPACE        &kp SYM          &kp NAV       &kp LC(BSPC)
             >;
         };
 
@@ -88,10 +88,10 @@
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN &inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN &inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
 
             bindings = <
-    &trans     &kp ESC      &kp PG_UP    &kp UP      &kp PG_DN     &trans                                      &kp ASTRK     &kp N7       &kp N8        &kp N9      &kp MINUS   &trans
-    &trans     &kp HOME     &kp LEFT     &kp DOWN    &kp RIGHT     &kp END              &trans                 &kp FSLH      &kp N4       &kp N5        &kp N6      &kp PLUS    &trans
-    &trans     &trans       &trans       &trans      &trans        &trans                                      &kp EQUAL     &kp N1       &kp N2        &kp N3      &kp N0      &trans
-                                         &trans      &trans        &trans       &kp TAB       &kp BSPC         &kp SPACE     &kp DOT      &trans
+    &trans     &kp F1       &kp F2       &kp F3             &kp F4           &kp F5                                      &kp F6        &kp F7         &kp F8        &kp F9      &kp F10     &trans
+    &trans     &kp F11      &kp F12      &kp C_PREVIOUS     &kp C_NEXT       &kp C_PLAY_PAUSE     &trans                 &kp LEFT      &kp DOWN       &kp UP        &kp RIGHT   &trans      &trans
+    &trans     &trans       &trans       &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp K_MUTE                                  &kp HOME      &kp PAGE_DOWN  &kp PAGE_UP   &kp END     &trans      &trans
+                                         &trans             &trans           &trans       &trans       &trans         &trans     &trans        &trans
             >;
         };
 
@@ -101,10 +101,10 @@
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN &inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN &inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
 
             bindings = <
-    &trans     &kp EXCL     &kp AT       &kp HASH        &kp DLLR         &kp PRCNT                                   &kp CARET     &kp AMPS          &kp ASTRK     &kp UNDER   &kp EQUAL   &trans
-    &trans     &kp MINUS    &kp LBKT     &kp LBRC        &kp LPAR         &kp LT                &trans                &kp GT        &kp RPAR          &kp RBRC      &kp RBKT    &kp PLUS    &trans
-    &trans     &kp CAPS     &kp GRAVE    &kp LC(LS(TAB)) &kp LC(LG(LEFT)) &caps_word                                  &trans        &kp LC(LG(RIGHT)) &kp LC(TAB)   &trans      &kp BSLH    &trans
-                                         &trans          &trans           &kp RET       &kp DEL        &kp BSPC       &trans        &trans            &trans
+    &kp GRAVE   &kp N1        &kp N2        &kp N3          &kp N4           &kp N5                                      &kp N6        &kp N7            &kp N8        &kp N9      &kp N0      &trans
+    &trans      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3     &bt BT_SEL 4          &trans                &kp GT        &kp MINUS         &kp EQUAL     &kp LBKT    &kp RBKT    &kp BSLH
+    &trans      &bt BT_CLR    &trans        &bt BT_PRV      &bt BT_NXT       &trans                                      &caps_word    &kp GRAVE         &trans        &trans      &kp BSLH    &trans
+                                            &trans          &trans           &trans        &trans         &trans         &trans        &trans            &trans
             >;
         };
 
@@ -117,7 +117,7 @@
     &trans     &trans       &kp LS(PG_UP) &kp LS(UP)   &kp LS(PG_DN) &trans                                      &kp C_PLAY_PAUSE &kp F7       &kp F8        &kp F9      &kp F10     &trans
     &trans     &kp LS(HOME) &kp LS(LEFT)  &kp LS(DOWN) &kp LS(RIGHT) &kp LS(END)           &trans                &kp K_VOL_UP     &kp F4       &kp F5        &kp F6      &kp F11     &trans
     &trans     &trans       &trans        &trans       &trans        &kp C_MUTE                                  &kp K_VOL_DN     &kp F1       &kp F2        &kp F3      &kp F12     &trans
-                                          &trans       &trans        &trans        &trans         &trans         &trans           &kp SPACE    &trans
+                                          &trans       &trans        &trans        &trans         &trans         &trans           &trans    &trans
             >;
         };
 
