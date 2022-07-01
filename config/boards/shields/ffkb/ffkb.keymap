@@ -50,8 +50,8 @@
         tri_layer {
             if-layers = <NAV SYM>;
             then-layer = <FUNC>;
-        }
-    }
+        };
+    };
 
     behaviors {
         hm: homerow_mods {
