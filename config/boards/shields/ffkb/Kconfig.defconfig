@@ -4,7 +4,7 @@
 if SHIELD_FFKB
 
 config ZMK_KEYBOARD_NAME
-    default "ffkb"
+    default "FFKB"
 
 CONFIG_BUILD_OUTPUT_UF2=y
 
